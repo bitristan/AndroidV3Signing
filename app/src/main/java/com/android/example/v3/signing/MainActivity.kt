@@ -40,6 +40,6 @@ class MainActivity : AppCompatActivity() {
         builder.append("\n\n")
         builder.append("SHA256: ")
         builder.append(data.sha256())
-        builder.append("\n")
+        builder.append("\n\n\n")
     }
 }
