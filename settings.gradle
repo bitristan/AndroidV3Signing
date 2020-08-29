@@ -1,0 +1,2 @@
+rootProject.name = "AndroidV3SigningTest"
+include ':app'
