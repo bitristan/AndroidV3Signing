@@ -3,16 +3,14 @@
 就是为了解决签名替换的。
 
 目前的android studio和gradle都还不支持v3签名的配置，所以如果想体验V3签名暂时只能使用apksigner手动签名。<br/>
-(android gradle build tools 4.2.0-alpha版本支持了 **enableV3Signing** 参数，不过暂时还没看到详细的用法)
+(android gradle build tools 4.2.0-alpha版本支持了 **enableV3Signing** 参数，不过暂时还没看到详细的用法)。
 
-本Demo演示了如何使用 [**apksigner**](https://developer.android.com/studio/command-line/apksigner) 手动进行app的签名替换，
-由于V3签名不支持9.0以下的系统，所以此方案要求app的minSdkVersion为28
-
+本Demo演示了如何使用 [**apksigner**](https://developer.android.com/studio/command-line/apksigner) 手动进行app的签名替换。
 
 ## 准备keystore文件
 
 首先准备2个keystore文件，一个用户正常版本，一个用户新版本，我们测试新版本替换新的keystore后是否能正常覆盖安装应用，这里生成的两个签名
-文件alias分别为old和new，密码都是123456
+文件alias分别为old和new，密码都是123456。
 
 ## 使用 old.jks 签名打包应用，查看签名
 ```
