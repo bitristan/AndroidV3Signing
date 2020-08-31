@@ -38,7 +38,7 @@ Signer #1 public key MD5 digest: 537b8b7fa2d1318275d1be3fd50fe01b
 ## 替换新签名，生成新apk
 ```
 apksigner rotate --out ./lineage --old-signer --ks keystores/old.jks --new-signer --ks keystores/new.jks
-apksigner sign --ks keystores/old.jks --next-signer --ks keystores/new.jks --lineage ./lineage --out new-release.apk --v3-signing-enabled true --v4-signing-enabled false /home/sunting/workspace/github/AndroidV3SigningTest/app/build/outputs/apk/release/app-release.apk
+apksigner sign --ks keystores/old.jks --next-signer --ks keystores/new.jks --lineage ./lineage --out new-release.apk --v3-signing-enabled true --v4-signing-enabled false app/build/outputs/apk/release/app-release.apk
 ```
 
 ## 验证新生成的new-release.apk的签名
